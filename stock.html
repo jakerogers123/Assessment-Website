@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"  />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="search.css" />
+        <title>Rogers Imports</title>
+        
+    </head>
+    
+    
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo"><a href="#">Rogers Imports</a></div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="stock.html">Our Stock</a></li>
+                    <li><a href="sellcar.html">Sell Your Car</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+                <a href="#" class="action_btn">Contact Us</a> 
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                </nav>
+       
+
+            <ul class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stock.html">Our Stock</a></li>
+                <li><a href="sellcar.html">Sell Your Car</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#" class="action_btn">Contact Us</a></li>
+            </ul>
+        </header>
+
+        <header>
+           <h1 style="font-size: 50px;">Our Stock</h1>
+        </header>
+        <p style="font-size: 24px;">Cars for sale will go here</p>
+
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+</script>
+
+    
+    </body>
+</html>
